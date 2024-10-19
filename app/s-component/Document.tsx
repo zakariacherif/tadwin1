@@ -14,7 +14,7 @@ import InviteUser from './InviteUser';
 import ManageUsers from './ManageUsers';
 import Avatars from './Avatars';
 import TranslateDocument from './TranslateDocument';
-import SpeechRecognition from './SpeechRecognition';
+
 
 const Document = ({ id }: { id: string }) => {
     const [data, loading, error] = useDocumentData(doc(db, 'documents', id));
@@ -99,7 +99,6 @@ const Document = ({ id }: { id: string }) => {
                 <ManageUsers  />
                     {/*Translate a  <TranslateDocument doc={doc}/> summary of the document to other languages*/}
                    {/*Speech recognition*/}
-                   <SpeechRecognition />
                   {/*avatrs*/}
                 <Avatars />
 
